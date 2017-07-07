@@ -1,0 +1,396 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f3f3;
+}
+ul {
+    list-style: none;
+}
+.wrap {
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;;
+    font-family: "微软雅黑", "helvetica neue", tahoma, "hiragino sans gb", stheiti, "wenquanyi micro hei", \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+    font-size: 12px;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*解决高度坍塌问题*/
+.fix{zoom:1;}
+.fix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+
+/*适用于手机端：字体大小用em，1em=16px；为默认字体大小;最大宽度640*/
+/*******************header*********************/
+header{
+    width: 100%;
+    height: 1rem;
+    background-color: #5970ff;
+}
+.header_left{
+    width: 1.82rem;
+    height: 0.5rem;
+    padding: 0.25rem 0.2rem;
+    float: left;
+}
+.header_right{
+    width: 0.5rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding: 0.25rem 0.2rem;
+    float: right;
+}
+.device img{
+    height: 100%;
+}
+.header-nav{
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    z-index: 999999999;
+    opacity: 0;
+    overflow: hidden;
+    margin-left: 100%;
+}
+.header-nav ul{
+    width: 3rem;
+    height: 100%;
+    background-color: #fff;
+    float: right;
+    padding-top: 0.4rem;
+}
+.header-nav ul li{
+    width: 100%;
+    height: 0.55rem;
+    line-height: 0.55rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+}
+.header-nav ul li a{
+    display: block;
+}
+.header-nav ul li a span{
+    width: 0.1rem;
+    height: 0.18rem;
+    display: inline-block;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    background: url("../img/common/jiantou-ico.png")no-repeat right;
+}
+.header-nav ul li:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.header-nav ul li:nth-child(1){
+    background: url("../img/common/index-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(2){
+    background: url("../img/common/us-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(3){
+    background: url("../img/common/project-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(4){
+    background: url("../img/common/jidi-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(5){
+    background: url("../img/common/yiliao-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(6){
+    background: url("../img/common/mall-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(7){
+    background: url("../img/common/news-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(8){
+    background: url("../img/common/join-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+.header-nav ul li:nth-child(9){
+    background: url("../img/common/contact-ico.png")no-repeat;
+    background-size: 0.3rem;
+    background-position: 0.26rem 0.15rem;
+}
+/*******************首页新闻滚动*********************/
+.news-index{
+    width: 100%;
+    height: 0.5rem;
+    background: #fff;
+    margin: 0.2rem 0;
+}
+.newShow{
+    width: 100%;
+    height: 0.5rem;
+}
+.newShow_left{
+    width: 1.13rem;
+    height: 0.5rem;
+    padding: 0.05rem 0 0.05rem 0.2rem;
+    float: left;
+}
+.newShow_right{
+    line-height: 0.5rem;
+    margin-left: 2rem;
+}
+.newShow_right a{
+    font-size: 0.18rem;
+}
+/*******************首页导航*********************/
+nav{
+    width: 100%;
+    background-color: #fff;
+}
+.nav_top{
+    width: 100%;
+    background: #fff;
+}
+.nav_top ul{
+    padding: 0.2rem;
+}
+.nav_top ul li{
+    width: 22%;
+    float: left;
+    margin-left: 4%;
+}
+.nav_top ul li:first-child{
+    margin-left: 0;
+}
+.nav_top ul li a{
+    display: block;
+}
+.nav_top ul li .li_top{
+    width: 70%;
+    padding-bottom: 0.2rem;
+    margin: 0 auto;
+}
+.nav_top ul li .li_bottom{
+    text-align: center;
+    color: #65636e;
+    font-size: 0.18rem;
+}
+.nav_bottom{
+    width: 100%;
+    padding: 0.2rem 0;
+}
+/*****************首页集团项目*******************/
+.project-index{
+    width: 100%;
+    background: #fff;
+    margin: 0.22rem 0;
+}
+.project-index_top{
+    width: 100%;
+    padding: 0.15rem 0;
+}
+.project-index_top_left{
+    border-left: 5px solid #5970ff;
+    float: left;
+}
+.project-index_top_left a{
+    display: block;
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    padding-left: 0.2rem;
+}
+.project-index_top_right{
+    float: right;
+    margin-right: 0.2rem;
+}
+.project-index_top_right a{
+    display: block;
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    padding-left: 0.2rem;
+    color: #878c89;
+    background: url("../img/index/see-ico.png")no-repeat right;
+    background-size: 0.24rem;
+    padding-right: 0.4rem;
+}
+.project-index_bottom{
+    width: 100%;
+}
+.project-index_bottom ul{
+    width: 100%;
+    /*padding: 0.22rem;*/
+}
+.project-index_bottom ul:first-child{
+    padding-bottom: 0;
+}
+.project-index_bottom ul:first-child li{
+    margin-bottom: 0;
+}
+.project-index_bottom ul li{
+    display: inline-block;
+    width: 45%;
+    border: 1px solid #efefef;
+    border-radius: 0.1rem;
+    box-shadow: 0.01rem 0.01rem 0.01rem #e2e2e2;
+    margin: 0.2rem;
+}
+.project-index_bottom ul li:first-child{
+    float: left;
+}
+.project-index_bottom ul li:nth-child(2){
+    float: right;
+    margin-right: 0.2rem;
+    margin-left: 0;
+}
+.project-index_bottom ul li a{
+    display: block;
+}
+.project-image img{
+    -webkit-border-top-left-radius: 0.1rem;
+    -webkit-border-top-right-radius: 0.1rem;
+}
+.project-title{
+    padding-left: 0.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.24rem;
+    color: #65636e;
+}
+/*****************首页图片展示*********************/
+.show-index{
+    background-color: #fff;
+}
+.show-title{
+    padding: 0.2rem;
+    text-align: center;
+}
+.show-title ul li{
+    float: left;
+    width: 32.9%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    text-align: center;
+    border: 1px solid #5970ff;
+    border-left: none;
+    color: #5970ff;
+}
+.show-title ul li:first-child{
+    background-color: #5970ff;
+    border-left: 1px solid #5970ff;
+    border-top-left-radius: 0.05rem;
+    border-bottom-left-radius: 0.05rem;
+    color: #fff;
+}
+.show-title ul li:last-child{
+    border-top-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+}
+.show-con{
+    width: 100%;
+}
+.showContent{
+
+}
+.show-huanjing{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding: 0.2rem 0;
+}
+.show-huanjing-con{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #efefef;
+    box-shadow: 0.01rem 0.01rem 0.01rem #e2e2e2;
+    padding: 0.1rem;
+}
+.show-huodong{
+    width: 100%;
+    height: 4rem;
+    background: #801b38;
+    display: none;
+}
+.show-join{
+    width: 100%;
+    height: 4rem;
+    background: #151480;
+    display: none;
+}
+/******************底部*******************/
+footer{
+    width: 100%;
+    padding: 0.2rem 0;
+}
+footer p{
+    text-align: center;
+    font-size: 0.18rem;
+    color: #444;
+    line-height: 0.4rem;
+}
+footer p span{
+    color: #ff0000;
+}
+.null{
+    height: 0.68rem;
+}
+/******************底部导航*******************/
+.bottomNav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.69rem;
+    background: #fff;
+}
+.bottomNav ul li{
+    float: left;
+    width: 24%;
+    text-align: center;
+    border-left: 1px solid #f3f3f3;
+}
+.bottomNav ul li:nth-child(1){
+    border-left: none;
+}
+.bottomNav ul li a{
+    display: block;
+    font-size: 0.21rem;
+    line-height: 0.69rem;
+    padding-left: 0.65rem;
+    cursor: pointer;
+}
+.bottomNav ul li:nth-child(1) a {
+    background: url("../img/common/home-ico.png") no-repeat 0.4rem 0.19rem;
+    background-size: 0.32rem;
+}
+.bottomNav ul li:nth-child(2) a {
+    background: url("../img/common/phone-ico.png") no-repeat 0.4rem 0.19rem;
+    background-size: 0.32rem;
+}
+.bottomNav ul li:nth-child(3) a {
+    background: url("../img/common/QQ-ico.png") no-repeat 0.4rem 0.19rem;
+    background-size: 0.32rem;
+}
+.bottomNav ul li:nth-child(4) a {
+    background: url("../img/common/top-ico.png") no-repeat 0.4rem 0.19rem;
+    background-size: 0.32rem;
+}
