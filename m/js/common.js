@@ -16,6 +16,8 @@ $('#showTitle li').click(function () {
     $(this).css({background:'#5970ff',color:'#fff'}).siblings().css({background:'#fff',color:'#5970ff'});
     i = $(this).index();
     $('.showContent div.showDiv').eq(i).show().siblings().hide();
+    $('#showImages').children('div.swiper-wrapper').eq(i).show().siblings().hide();
+
 });
 
 /**************底部按钮导航*************/

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/idangerous.swiper.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="device">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="img/index/huodong1.jpg" class="img-responsive"> </div>
+            <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
+        </div>
+    </div>
+    <div class="pagination swiper-p1"></div>
+</div>
+<div class="show-huodong showDiv">
+    <a class="arrow-left" href="#"></a>
+    <a class="arrow-right" href="#"></a>
+    <div class="show-huodong-con">
+        <div class="device">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="img/index/huodong1.jpg" class="img-responsive"> </div>
+                    <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
+                </div>
+            </div>
+            <div class="pagination swiper-p2"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script>
+    /*轮播部分*/
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-p1',
+        loop:true,//循环模式  是/否
+        grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
+        paginationClickable: true,//生成分页控件
+        calculateHeight:true,//响应式容器高度
+        autoplay:3000,//过度时间
+        speed:1100,
+        lazyLoading : true
+    });
+    var mySwiper2 = new Swiper('.show-huanjing-con .swiper-container', {
+        pagination: '.swiper-p2',
+        loop:true,//循环模式  是/否
+        grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
+        paginationClickable: true,//生成分页控件
+        calculateHeight:true,//响应式容器高度
+        autoplay:2500,//过度时间
+        speed:500,
+        lazyLoading : true
+    });
+    var mySwiper = new Swiper('.show-huodong-con .swiper-container', {
+        pagination: '.swiper-p3',
+        loop:true,//循环模式  是/否
+        grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
+        paginationClickable: true,//生成分页控件
+        calculateHeight:true,//响应式容器高度
+        autoplay:2500,//过度时间
+        speed:500,
+        lazyLoading : true
+    });
+    $(window).resize(function(){
+        var h=$(".swiper-slide").find("img").height();
+        $(".swiper-wrapper,.swiper-slide").css("height",h)
+    });
+    $('.arrow-left').on('click', function(e){
+        e.preventDefault();
+        mySwiper2.swipePrev()
+    });
+    $('.arrow-right').on('click', function(e){
+        e.preventDefault();
+        mySwiper2.swipeNext()
+    });
+</script>
+</html>
