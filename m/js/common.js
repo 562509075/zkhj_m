@@ -14,7 +14,7 @@ $('.header-nav').click(function () {
 /**************��ҳͼƬչʾ*************/
 $('#showTitle li').click(function () {
     $(this).css({background:'#5970ff',color:'#fff'}).siblings().css({background:'#fff',color:'#5970ff'});
-    i = $(this).index;
+    i = $(this).index();
     $('.showContent div.showDiv').eq(i).show().siblings().hide();
 });
 
