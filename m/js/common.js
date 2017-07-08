@@ -10,12 +10,50 @@ $('.header-nav').click(function () {
     /*$('.header-nav').animate({height:'0%',opacity:'0'},500);*/
     $('.header-nav').animate({marginLeft:'100%',opacity:'0',height:'0%'},500);
 });
+
 /**************主页图片展示*************/
 $('#showTitle li').click(function () {
     $(this).css({background:'#5970ff',color:'#fff'}).siblings().css({background:'#fff',color:'#5970ff'});
-    i = $(this).index();
-    alert(i);
-    $('.showContent div.shouDiv').eq(i).show().siblings().hide();
+    i = $(this).index;
+    $('.showContent div.showDiv').eq(i).show().siblings().hide();
+});
+
+/**************底部按钮导航*************/
+$('#bottomNav li').click(function () {
+    var bgImages = [
+        '../m/img/common/home-ico.png',
+        '../m/img/common/home-ico2.png',
+        '../m/img/common/phone-ico.png',
+        '../m/img/common/phone-ico2.png',
+        '../m/img/common/QQ-ico.png',
+        '../m/img/common/QQ-ico2.png',
+        '../m/img/common/top-ico.png',
+        '../m/img/common/top-ico2.png'
+    ];
+    $(this).css({backgroundColor:'#5970ff',color:'#fff'}).siblings().css({backgroundColor:'#fff',color:'#fff'});
+    $(this).children('a').css({color:'#fff'}).parent().siblings().children('a').css({color:'#000'});
+    j = $(this).index();
+    if(j == 0){
+        $(this).children('a').css({background:'url('+bgImages[1]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(1).children('a').css({background:'url('+bgImages[2]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(2).children('a').css({background:'url('+bgImages[4]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(3).children('a').css({background:'url('+bgImages[6]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+    }else if(j == 1){
+        $(this).children('a').css({background:'url('+bgImages[3]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(0).children('a').css({background:'url('+bgImages[0]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(2).children('a').css({background:'url('+bgImages[4]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(3).children('a').css({background:'url('+bgImages[6]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+    }else if(j == 2){
+        $(this).children('a').css({background:'url('+bgImages[5]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(0).children('a').css({background:'url('+bgImages[0]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(1).children('a').css({background:'url('+bgImages[2]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(3).children('a').css({background:'url('+bgImages[6]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+    }else if(j == 3){
+        $(this).children('a').css({background:'url('+bgImages[7]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(0).children('a').css({background:'url('+bgImages[0]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(1).children('a').css({background:'url('+bgImages[2]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+        $('#bottomNav li').eq(2).children('a').css({background:'url('+bgImages[4]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+    }
 });
 /**************点击缓慢返回顶部*************/
 window.onload = function(){

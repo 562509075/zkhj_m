@@ -378,7 +378,7 @@ footer p span{
     padding-left: 0.65rem;
     cursor: pointer;
 }
-.bottomNav ul li:nth-child(1) a {
+.bottomNav ul li:nth-child(1) a{
     background: url("../img/common/home-ico.png") no-repeat 0.4rem 0.19rem;
     background-size: 0.32rem;
 }
