@@ -66,7 +66,7 @@
                 <div class="swiper-slide"><a href="#"><img src="img/index/banner4.jpg" class="img-responsive"></a> </div>
             </div>
         </div>
-        <div class="pagination"></div>
+        <div class="pagination swiper-p1"></div>
     </div>
 </div>
 <!--新闻滚动-->
@@ -221,21 +221,21 @@
         <div class="show-con">
             <div class="showContent">
                 <div class="show-huanjing showDiv">
+                    <a class="arrow-left" href="#"></a>
+                    <a class="arrow-right" href="#"></a>
                     <div class="show-huanjing-con">
                         <div class="device">
-                            <div class="swiper-container1">
-                                <a class="arrow-left" href="#"></a>
-                                <a class="arrow-right" href="#"></a>
+
+                            <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
-                                    <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
-                                    <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
-                                    <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/huanjing2.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/huanjing3.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/huanjing4.jpg" class="img-responsive"> </div>
                                 </div>
                             </div>
-                            <div class="pagination"></div>
+                            <div class="pagination swiper-p2"></div>
                         </div>
-                        <!--<img src="img/index/huanjing1.jpg" alt=""/>-->
                     </div>
                 </div>
                 <div class="show-huodong showDiv">
@@ -272,7 +272,7 @@
 <script>
     /*轮播部分*/
     var mySwiper = new Swiper('.swiper-container',{
-        pagination: '.pagination',
+        pagination: '.swiper-p1',
         loop:true,//循环模式  是/否
         grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
         paginationClickable: true,//生成分页控件
@@ -281,8 +281,8 @@
         speed:1100,
         lazyLoading : true
     });
-    var mySwiper1 = new Swiper('.swiper-container1',{
-        pagination: '.pagination',
+    var mySwiper = new Swiper('.show-huanjing-con .swiper-container', {
+        pagination: '.swiper-p2',
         loop:true,//循环模式  是/否
         grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
         paginationClickable: true,//生成分页控件

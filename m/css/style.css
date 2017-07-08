@@ -307,33 +307,31 @@ nav{
 .show-con{
     width: 100%;
 }
-.showContent{
-
-}
 .show-huanjing{
     width: 100%;
     background: #fff;
     overflow: hidden;
     padding: 0.2rem 0;
 }
-.show-huanjing-con{
+.show-huanjing-con,
+.show-huodong-con,
+.show-join-con{
     width: 70%;
     margin: 0 auto;
-    overflow: hidden;
     border: 1px solid #efefef;
     box-shadow: 0.01rem 0.01rem 0.01rem #e2e2e2;
     padding: 0.1rem;
 }
 .show-huodong{
     width: 100%;
-    height: 4rem;
-    background: #801b38;
+    background: #fff;
+    padding: 0.2rem 0;
     display: none;
 }
 .show-join{
     width: 100%;
-    height: 4rem;
-    background: #151480;
+    background: #fff;
+    padding: 0.2rem 0;
     display: none;
 }
 /******************底部*******************/

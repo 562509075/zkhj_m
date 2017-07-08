@@ -60,7 +60,7 @@ Basic Swiper Styles
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
-.swiper-container1{
+.swiper-container2{
 	overflow: hidden;
 }
 .swiper-free-mode > .swiper-wrapper {
@@ -135,8 +135,10 @@ demo 自写样式开始
   width: 100%;
   position: relative;
 }
-
-.device .arrow-left {
+.showContent{
+	position: relative;
+}
+.arrow-left {
   background: url(../img/index/arrows.png) no-repeat left top;
   position: absolute;
   left: 0.2rem;
@@ -147,7 +149,7 @@ demo 自写样式开始
   z-index:1029;
 	background-size: 100%;
 }
-.device .arrow-right {
+.arrow-right {
   background: url(../img/index/arrows.png) no-repeat left bottom;
   position: absolute;
   right: 0.2rem;
@@ -192,5 +194,5 @@ demo 自写样式开始
 }
 @media (max-width: 768px) {
 	.device{margin-bottom:0px !important;}
-	.device .arrow-left,.device .arrow-right{display:none;}
+
 }
