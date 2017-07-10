@@ -17,7 +17,7 @@ $('#showTitle li').click(function () {
     i = $(this).index();
     $('.showContent div.showDiv').eq(i).show().siblings().hide();
     $('#showImages').children('div.swiper-wrapper').eq(i).show().siblings().hide();
-
+    /*$('#showImages').children('div.swiper-wrapper').eq(i).html(newhtml);*/
 });
 
 /**************底部按钮导航*************/
@@ -55,6 +55,29 @@ $('#bottomNav li').click(function () {
         $('#bottomNav li').eq(0).children('a').css({background:'url('+bgImages[0]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
         $('#bottomNav li').eq(1).children('a').css({background:'url('+bgImages[2]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
         $('#bottomNav li').eq(2).children('a').css({background:'url('+bgImages[4]+')no-repeat 0.4rem 0.19rem', backgroundSize: '0.32rem'});
+    }
+});
+/**************列表页点击展开更多************/
+var liLength = $('.list-con_top ul li').length;
+if(liLength<5){
+    $('.moreList').hide();
+}else{
+    $('.moreList').show();
+}
+var show = 0;
+$('.moreList').click(function () {
+   /* $('.list-con_top ul li').css({display:'block'});*/
+    if(show == 0){
+        $('.list-con_top ul li').show('slow');
+        $(this).children('p').html('收起');
+        show = 1;
+        $(this).children('span').css({transform:'rotate(180deg)'});
+    }else if(show == 1){
+        $('.list-con_top ul li').not('li:eq(0),li:eq(1),li:eq(2),li:eq(3)').hide('slow');
+        $(this).children('p').html('查看更多');
+        show = 0;
+       /* $(this).children('span').animate({rotate: '180deg'});*/
+        $(this).children('span').css({transform:'rotate(0deg)'});
     }
 });
 /**************点击缓慢返回顶部*************/

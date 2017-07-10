@@ -57,7 +57,7 @@ header{
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
-    z-index: 999999999;
+    z-index: 99999999999;
     opacity: 0;
     overflow: hidden;
     margin-left: 100%;
@@ -192,7 +192,7 @@ nav{
 .nav_top ul li .li_bottom{
     text-align: center;
     color: #65636e;
-    font-size: 0.18rem;
+    font-size: 0.24rem;
 }
 .nav_bottom{
     width: 100%;
@@ -215,7 +215,7 @@ nav{
 .project-index_top_left a{
     display: block;
     line-height: 0.5rem;
-    font-size: 0.24rem;
+    font-size: 0.32rem;
     padding-left: 0.2rem;
 }
 .project-index_top_right{
@@ -225,7 +225,7 @@ nav{
 .project-index_top_right a{
     display: block;
     line-height: 0.5rem;
-    font-size: 0.24rem;
+    font-size: 0.32rem;
     padding-left: 0.2rem;
     color: #878c89;
     background: url("../img/index/see-ico.png")no-repeat right;
@@ -321,7 +321,7 @@ nav{
     box-shadow: 0.01rem 0.01rem 0.01rem #e2e2e2;
     padding: 0.1rem;
 }
-/*.show-huodong{
+.show-huodong{
     width: 100%;
     background: #fff;
     padding: 0.2rem 0;
@@ -332,7 +332,7 @@ nav{
     background: #fff;
     padding: 0.2rem 0;
     display: none;
-}*/
+}
 #showImages div.swiper-wrapper{
     display: none;
 }
@@ -364,7 +364,7 @@ footer p span{
     width: 100%;
     height: 0.69rem;
     background: #fff;
-    z-index: 999999999;
+    z-index: 9999999;
 }
 .bottomNav ul li{
     float: left;
@@ -397,4 +397,292 @@ footer p span{
 .bottomNav ul li:nth-child(4) a {
     background: url("../img/common/top-ico.png") no-repeat 0.4rem 0.19rem;
     background-size: 0.32rem;
+}
+
+/*****************列表页-主体******************/
+.list-con{
+    width: 100%;
+    padding: 0.2rem 0;
+    background: #fff;
+}
+.list-con .list-con_top{
+    width: auto;
+}
+.list-con ul li{
+    width: 100%;
+    padding: 0.17rem 0;
+    border-bottom: 1px solid #f3f3f3;
+}
+.list-con ul li:last-child{
+    border-bottom: none;
+}
+.list-con ul li .listContent{
+    margin: 0 0.2rem;
+    position: relative;
+}
+.listContent_left{
+    width: 30%;
+    float: left;
+}
+.listContent_left a{
+    display: block;
+}
+.listContent_right{
+    width: 65%;
+    margin-left: 5%;
+    float: left;
+    height: inherit;
+}
+.listContent_right h3{
+    font-size: 0.21rem;
+}
+.listContent_right p{
+    font-size: 0.18rem;
+    color: #959595;
+    margin-top: 0.15rem;
+}
+.listContent_right p a{
+    font-size: 0.18rem;
+    color: #5970ff;
+}
+.listContent_right div{
+    font-size: 0.18rem;
+    color: #959595;
+    position: absolute;
+    bottom: 0;
+}
+.listContent_right div span{
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.16rem;
+    background: url("../img/common/see-ico.png")no-repeat;
+    background-size: 100%;
+    padding-right: 0.08rem;
+}
+.list-con ul li{
+    display: none;
+}
+.list-con ul li:nth-child(1),
+.list-con ul li:nth-child(2),
+.list-con ul li:nth-child(3),
+.list-con ul li:nth-child(4){
+    display: block;
+}
+
+.moreList{
+    width: 100%;
+    text-align: center;
+    padding: 0.15rem 0;
+    border-bottom: 1px solid #f3f3f3;
+}
+.moreList p{
+    display: inline-block;
+    font-size: 0.24rem;
+    color: #878c89;
+}
+.moreList span{
+    width: 0.3rem;
+    height: 0.22rem;
+    background: url("../img/common/seeMore-ico.png")no-repeat;
+    display: inline-block;
+    background-size: 100%;
+}
+.hotSpot{
+    width: 100%;
+}
+.hotSpot-title{
+    padding: 0.2rem 0;
+}
+.hotSpot-title-con{
+    border-left: 0.05rem solid #5970ff;
+}
+.hotSpot-title-con div{
+    padding: 0 0.2rem;
+}
+.hotSpot-title-con div a{
+    font-size: 0.24rem;
+}
+.hotSpot-title-con div a.right{
+    float: right;
+    display: inline-block;
+    color: #878c89;
+}
+.hotSpot-title-con div a.right span{
+    width: 0.15rem;
+    height: 0.25rem;
+    display: inline-block;
+    background: url("../img/index/see-ico.png")no-repeat;
+    background-size: 100%;
+    margin-left: 0.1rem;
+}
+.hotSpot-content{
+    padding: 0 0.2rem;
+}
+.hotSpot-content-con{
+    height: 1.88rem;
+    position: relative;
+}
+.hotSpot-content-con div{
+    padding: 0.15rem 0;
+    text-align: center;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    color: #fff;
+    font-size: 0.21rem;
+}
+.hotSpot-content-con div.hot1{
+    width: 34.5%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #82c67b;
+}
+.hotSpot-content-con div.hot2{
+    width: 34.5%;
+    top: 0.64rem;
+    position: absolute;
+    left: 0;
+    background: #76bbe4;
+}
+.hotSpot-content-con div.hot3{
+    width: 30%;
+    height: 0.94rem;
+    line-height: 0.9rem;
+    position: absolute;
+    left: 35%;
+    top: 0;
+    background: #ecbb45;
+}
+.hotSpot-content-con div.hot4{
+    width: 34.5%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #4bbeaf;
+}
+.hotSpot-content-con div.hot5{
+    width: 34.5%;
+    position: absolute;
+    right: 0;
+    top: 0.64rem;
+    background: #ed9780;
+}
+.hotSpot-content-con div.hot6{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 1.28rem;
+    background: #ed9780;
+}
+.hotSpot-content-con div.hot7{
+    width: 49.5%;
+    position: absolute;
+    right: 0;
+    top: 1.28rem;
+    background: #967ae8;
+}
+/*****************内容页*******************/
+header{
+    text-align: center;
+}
+header a.return{
+    display: inline-block;
+    background: url("../img/common/return_ico.png")no-repeat left;
+    height: 1rem;
+    padding-left: 0.35rem;
+    font-size: 0.35rem;
+    line-height: 1rem;
+    color: #fff;
+    margin-left: 0.2rem;
+    float: left;
+}
+.header-title{
+    display: inline-block;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.32rem;
+    color: #fff;
+}
+.content{
+    background: #fff;
+    padding: 0.2rem;
+}
+.content-title{
+
+}
+.content-title h3{
+    font-size: 0.21rem;
+    color: #333;
+}
+.date{
+    display: inline-block;
+    padding: 0.2rem 0;
+    font-size: 0.14rem;
+    color: #959595;
+}
+.content p{
+    font-size: 0.14rem;
+    color: #8c8c8c;
+    text-indent: 0.28rem;
+    padding: 0.2rem 0;
+}
+.content-image{
+    width: 100%;
+}
+.content h4{
+    font-size: 0.1rem;
+    color: #333;
+    display: inline-block;
+    padding-top: 0.2rem;
+}
+.content .link{
+    padding-bottom: 0.4rem;
+}
+.content-prev{
+    float: left;
+}
+.content-next{
+    float: right;
+}
+.content .link{
+    text-indent: 0;
+    color: #bcbaba;
+}
+.content .link span.link-title{
+    color: #666;
+}
+.content .link span.hot{
+    color: #ff0606;
+}
+
+.recommend{
+
+}
+.recommend-title{
+    padding: 0.15rem 0.2rem;
+    color: #5970ff;
+    font-size: 0.24rem;
+    font-family: "Microsoft YaHei", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", Tahoma, Arial, STHeiti, sans-serif;
+}
+.recommend-title span{
+    width: 0.23rem;
+    height: 0.27rem;
+    background: url("../img/common/recommend-ico.png")no-repeat left;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+.recommend-list{
+    background: #fff;
+    padding: 0.2rem;
+}
+.recommend-list li{
+    padding: 0.15rem 0;
+    border-bottom: 1px dotted #dedede;
+    color: #8c8c8c;
+    font-size: 0.14rem;
+}
+.recommend-list li:first-child{
+    padding-top: 0;
 }

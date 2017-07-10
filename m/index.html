@@ -56,7 +56,7 @@
     </div>
 </header>
 <!--轮播-->
-<div class="wrap">
+<div class="wrap lunbo">
     <div class="device">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -232,24 +232,24 @@
                                     <div class="swiper-slide"> <img src="img/index/huanjing3.jpg" class="img-responsive"> </div>
                                     <div class="swiper-slide"> <img src="img/index/huanjing4.jpg" class="img-responsive"> </div>
                                 </div>
-                                <div class="swiper-wrapper">
+                              <!--  <div class="swiper-wrapper">
                                     <div class="swiper-slide"> <img src="img/index/huodong1.jpg" class="img-responsive"> </div>
                                     <div class="swiper-slide"> <img src="img/index/huodong2.jpg" class="img-responsive"> </div>
                                     <div class="swiper-slide"> <img src="img/index/huodong3.jpg" class="img-responsive"> </div>
                                     <div class="swiper-slide"> <img src="img/index/huodong4.jpg" class="img-responsive"> </div>
                                 </div>
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
-                                    <div class="swiper-slide"> <img src="img/index/huanjing2.jpg" class="img-responsive"> </div>
-                                    <div class="swiper-slide"> <img src="img/index/huanjing3.jpg" class="img-responsive"> </div>
-                                    <div class="swiper-slide"> <img src="img/index/huanjing4.jpg" class="img-responsive"> </div>
-                                </div>
+                                    <div class="swiper-slide"> <img src="img/index/join1.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/join2.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/join3.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/join4.jpg" class="img-responsive"> </div>
+                                </div>-->
                             </div>
                             <div class="pagination swiper-p2"></div>
                         </div>
                     </div>
                 </div>
-                <!--<div class="show-huodong showDiv">
+                <div class="show-huodong showDiv">
                     <a class="arrow-left" href="#"></a>
                     <a class="arrow-right" href="#"></a>
                     <div class="show-huodong-con">
@@ -257,7 +257,9 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide"> <img src="img/index/huodong1.jpg" class="img-responsive"> </div>
-                                    <div class="swiper-slide"> <img src="img/index/huanjing1.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/huodong2.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/huodong3.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/huodong4.jpg" class="img-responsive"> </div>
                                 </div>
                             </div>
                             <div class="pagination swiper-p3"></div>
@@ -265,8 +267,22 @@
                     </div>
                 </div>
                 <div class="show-join showDiv">
-
-                </div>-->
+                    <a class="arrow-left" href="#"></a>
+                    <a class="arrow-right" href="#"></a>
+                    <div class="show-join-con">
+                        <div class="device">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"> <img src="img/index/join1.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/join2.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/join3.jpg" class="img-responsive"> </div>
+                                    <div class="swiper-slide"> <img src="img/index/join4.jpg" class="img-responsive"> </div>
+                                </div>
+                            </div>
+                            <div class="pagination swiper-p4"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -294,7 +310,7 @@
 <script src="js/common.js"></script>
 <script>
     /*轮播部分*/
-    var mySwiper = new Swiper('.swiper-container',{
+    var mySwiper = new Swiper('.lunbo .swiper-container',{
         pagination: '.swiper-p1',
         loop:true,//循环模式  是/否
         grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
@@ -306,6 +322,26 @@
     });
     var mySwiper2 = new Swiper('.show-huanjing-con .swiper-container', {
         pagination: '.swiper-p2',
+        loop:true,//循环模式  是/否
+        grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
+        paginationClickable: true,//生成分页控件
+        calculateHeight:true,//响应式容器高度
+        autoplay:2500,//过度时间
+        speed:500,
+        lazyLoading : true
+    });
+    var mySwiper3 = new Swiper('.show-huodong-con .swiper-container', {
+        pagination: '.swiper-p3',
+        loop:true,//循环模式  是/否
+        grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
+        paginationClickable: true,//生成分页控件
+        calculateHeight:true,//响应式容器高度
+        autoplay:2500,//过度时间
+        speed:500,
+        lazyLoading : true
+    });
+    var mySwiper4 = new Swiper('.show-join-con .swiper-container', {
+        pagination: '.swiper-p4',
         loop:true,//循环模式  是/否
         grabCursor: true,//光标属性   当为true时，光标移动到banner上变成手掌的样式
         paginationClickable: true,//生成分页控件
