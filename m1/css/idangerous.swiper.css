@@ -144,7 +144,7 @@ demo 自写样式开始
 .arrow-left4{
   background: url(../img/index/arrows.png) no-repeat left top;
   position: absolute;
-  left: 0.2rem;
+  left: 0.5rem;
   top: 50%;
   margin-top: -15px;
   width: 17px;
@@ -158,7 +158,7 @@ demo 自写样式开始
 .arrow-right4{
   background: url(../img/index/arrows.png) no-repeat left bottom;
   position: absolute;
-  right: 0.2rem;
+  right: 0.5rem;
   top: 50%;
   margin-top: -15px;
   width: 17px;
