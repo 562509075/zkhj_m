@@ -17,17 +17,19 @@
     <link rel="stylesheet" href="css/idangerous.swiper.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script type="text/javascript">
-       /* new function (){
-            var _self = this;
-            _self.width = 640;//设置默认最大宽度
-            _self.fontSize = 100;//默认字体大小
-            _self.widthProportion = function(){var p = (document.body&&document.body.clientWidthdocument.getElementsByTagName("html")[0].offsetWidth)/_self.width;return p>1?1:p<0.5?0.5:p;};
-            _self.changePage = function(){
-                document.getElementsByTagName("html")[0].setAttribute("style","font-size:"+_self.widthProportion()*_self.fontSize+"px !important");
-            };
-            _self.changePage();
-            window.addEventListener("resize",function(){_self.changePage();},false);
-        };*/
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                    };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
     </script>
 </head>
 <body>
@@ -57,7 +59,7 @@
 <!--主体内容-->
 <div class="wrap">
     <div class="content">
-        <div class="content-title">
+        <div class="con tent-title">
             <h3>恒健康养公寓：烟台基地，重庆基地，海南基地即将运营！</h3>
         </div>
         <span class="date">2015-03-25 11:25</span>

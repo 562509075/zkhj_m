@@ -60,6 +60,7 @@ header{
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
+    top: 0;
     z-index: 99999999999;
     opacity: 0;
     overflow: hidden;
@@ -370,6 +371,7 @@ footer p span{
     height: 0.69rem;
     background: #fff;
     z-index: 9999999;
+    box-shadow: 1px 0px 10px rgba(6,0,1,0.92);
 }
 .bottomNav ul li{
     float: left;
