@@ -17,7 +17,8 @@ $('#showTitle li').click(function () {
     i = $(this).index();
     $('.showContent div.showDiv').eq(i).show().siblings().hide();
     $('#showImages').children('div.swiper-wrapper').eq(i).show().siblings().hide();
-    /*$('#showImages').children('div.swiper-wrapper').eq(i).html(newhtml);*/
+    $('.show-huodong').css({height:'auto',padding:'0.2rem 0'});
+    $('.show-join').css({height:'auto',padding:'0.2rem 0'})
 });
 
 /**************底部按钮导航*************/

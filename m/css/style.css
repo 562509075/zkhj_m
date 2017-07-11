@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 100px;
+}
 body{
     background-color: #f3f3f3;
 }
@@ -324,14 +327,16 @@ nav{
 .show-huodong{
     width: 100%;
     background: #fff;
-    padding: 0.2rem 0;
-    display: none;
+   /* padding: 0.2rem 0;*/
+    height: 0;
+    overflow: hidden;
 }
 .show-join{
     width: 100%;
     background: #fff;
-    padding: 0.2rem 0;
-    display: none;
+   /* padding: 0.2rem 0;*/
+    height: 0;
+    overflow: hidden;
 }
 #showImages div.swiper-wrapper{
     display: none;
@@ -598,7 +603,7 @@ header a.return{
 }
 .header-title{
     display: inline-block;
-    text-align: center;
+    /*text-align: center;*/
     height: 1rem;
     line-height: 1rem;
     font-size: 0.32rem;
