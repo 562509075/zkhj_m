@@ -392,8 +392,12 @@ footer p span{
     background-size: 0.32rem;
 }
 .bottomNav ul li:nth-child(2) a {
-    background: url("../img/common/phone-ico.png") no-repeat 0.4rem 0.19rem;
+    background: url("../img/common/phone-ico2.png") no-repeat 0.4rem 0.19rem;
     background-size: 0.32rem;
+    color: #fff;
+}
+.bottomNav ul li:nth-child(2){
+    background-color: #5970ff;
 }
 .bottomNav ul li:nth-child(3) a {
     background: url("../img/common/QQ-ico.png") no-repeat 0.4rem 0.19rem;
