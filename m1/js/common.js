@@ -16,6 +16,7 @@ $('#showTitle li').click(function () {
     $(this).css({background:'#5970ff',color:'#fff'}).siblings().css({background:'#fff',color:'#5970ff'});
     i = $(this).index();
     $('.showContent div.showDiv').eq(i).show().siblings().hide();
+    $('.showContent div.showDiv').eq(i).children('a').show().parent().siblings().children('a').hide();
     $('#showImages').children('div.swiper-wrapper').eq(i).show().siblings().hide();
     $('.show-huodong').css({height:'auto',padding:'0.5rem 0'});
     $('.show-join').css({height:'auto',padding:'0.5rem 0'})

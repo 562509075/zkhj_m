@@ -18,7 +18,7 @@ ul {
     width: 100%;
     margin: 0 auto;;
     font-family: "微软雅黑", "helvetica neue", tahoma, "hiragino sans gb", stheiti, "wenquanyi micro hei", \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
-    font-size: 12px;
+    /*font-size: 12px;*/
 }
 img{
     width: 100%;
@@ -39,12 +39,13 @@ header{
 }
 .header_left{
     width: 4.55rem;
-    padding: 0.6rem 0.5rem;
+    /*padding: 0.51rem 0.5rem;*/
+    padding: 0.765rem 0.5rem 0.255rem 0.5rem;
     float: left;
 }
 .header_right{
     width: 1.15rem;
-    padding: 0.92rem 0.5rem;
+    padding: 0.59rem 0.5rem;
     float: right;
 }
 .device img{
@@ -183,7 +184,7 @@ nav{
 }
 .nav_top ul li .li_top{
     width: 2.425rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
     margin: 0 auto;
 }
 .nav_top ul li .li_bottom{
@@ -262,7 +263,7 @@ nav{
     -webkit-border-top-right-radius: 0.1rem;
 }
 .project-title{
-    padding: 0.375rem;
+    padding: 0.1185rem 0.375rem 0.375rem 0.375rem;
     font-size: 0.45rem;
     color: #65636e;
 }

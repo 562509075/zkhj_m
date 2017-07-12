@@ -152,6 +152,12 @@ demo 自写样式开始
   z-index:1029;
 	background-size: 100%;
 }
+.arrow-left3,
+.arrow-left4,
+.arrow-right3,
+.arrow-right4{
+	display: none;
+}
 .arrow-right,
 .arrow-right2,
 .arrow-right3,
