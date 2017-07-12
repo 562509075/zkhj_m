@@ -160,7 +160,7 @@ header{
 .newShow_right{
     line-height: 1.25rem;
 }
-.newShow_right a{
+.newShow_right ul li a{
     font-size: 0.45rem;
     display: block;
 }
@@ -700,6 +700,7 @@ header a.return{
     color: #8c8c8c;
     text-indent: 0.7rem;
     padding: 0.5rem 0;
+    line-height: 0.8rem;
 }
 .content-image{
     width: 100%;
