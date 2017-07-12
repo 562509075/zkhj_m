@@ -121,6 +121,6 @@ window.onload = function(){
             if(osTop == 0){
                 clearInterval(timer);
             }
-        },30);
+        },15);
     }
 };
