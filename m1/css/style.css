@@ -532,47 +532,50 @@ footer p span{
     font-size: 0.525rem;
 }
 .hotSpot-content-con div.hot1{
-    /*width: 34.5%;*/
-    width: 5.6rem;
+    width: 34.5%;
+   /* width: 5.6rem;*/
     position: absolute;
     left: 0;
     top: 0;
     background: #82c67b;
 }
 .hotSpot-content-con div.hot2{
-    /*width: 34.5%;*/
-    width: 5.6rem;
+    width: 34.5%;
+    /*width: 5.6rem;*/
     position: absolute;
-    top: 1.475rem;
+    top: 1.45rem;
     left: 0;
     background: #76bbe4;
     clear: left;
+    margin-top: 0.025rem;
 }
 .hotSpot-content-con div.hot3{
-    /*width: 30%;*/
-    width: 3.75rem;
-    height: 2.925rem;
+    width: 30.6%;
+    /*width: 3.75rem;*/
+    /*height: 2.925rem;*/
     line-height: 2.925rem;
     padding: 0;
     position: absolute;
-    left: 5.625rem;
+    /*left: 5.625rem;*/
+    left: 34.7%;
     top: 0;
     background: #ecbb45;
 }
 .hotSpot-content-con div.hot4{
-    /*width: 34.5%;*/
-    width: 5.6rem;
+    width: 34.5%;
+    /*width: 5.6rem;*/
     position: absolute;
     right: 0;
     top: 0;
     background: #4bbeaf;
 }
 .hotSpot-content-con div.hot5{
-    /*width: 34.5%;*/
-    width: 5.6rem;
+    width: 34.5%;
+   /* width: 5.6rem;*/
     position: absolute;
     right: 0;
-    top: 1.475rem;
+    top: 1.45rem;
+    margin-top: 0.025rem;
     background: #ed9780;
 }
 .hotSpot-content-con div.hot6{
@@ -580,7 +583,8 @@ footer p span{
     width: 7.4875rem;
     position: absolute;
     left: 0;
-    top: 2.95rem;
+    top: 2.925rem;
+    margin-top: 0.025rem;
     background: #ed9780;
 }
 .hotSpot-content-con div.hot7{
@@ -588,7 +592,8 @@ footer p span{
     width: 7.4875rem;
     position: absolute;
     right: 0;
-    top: 2.95rem;
+    top: 2.925rem;
+    margin-top: 0.025rem;
     background: #967ae8;
 }
 /*****************内容页*******************/
