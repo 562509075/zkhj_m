@@ -234,7 +234,7 @@ nav{
     padding: 0 0.5rem 0.5rem 0.5rem;
 }
 .project-index_bottom ul{
-    width: 100%;
+
 }
 .project-index_bottom ul:first-child{
     padding-bottom: 0;
@@ -243,17 +243,17 @@ nav{
     margin-bottom: 0;
 }
 .project-index_bottom ul li{
-    display: inline-block;
-    width: 7.125rem;
+    /*display: inline-block;*/
+    /*width: 7.125rem;*/
+    width: 47%;
+    float: left;
     border: 1px solid #efefef;
     border-radius: 0.1rem;
     box-shadow: 0.01rem 0.01rem 0.01rem #e2e2e2;
+    margin-top: 0.375rem;
 }
-.project-index_bottom ul li:first-child{
-    float: left;
-}
-.project-index_bottom ul li:nth-child(2){
-    float: right;
+.project-index_bottom ul li:nth-child( even) {
+    margin-left: 3%;
 }
 .project-index_bottom ul li a{
     display: block;
