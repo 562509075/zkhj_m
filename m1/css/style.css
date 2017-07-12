@@ -9,6 +9,7 @@ html{
 body{
     background-color: #f3f3f3;
 }
+::-webkit-scrollbar{width:0;}
 ul {
     list-style: none;
 }
