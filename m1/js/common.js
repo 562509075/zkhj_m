@@ -79,7 +79,7 @@ $('.moreList').click(function () {
         $(this).children('p').html('查看更多');
         show = 0;
        /* $(this).children('span').animate({rotate: '180deg'});*/
-        $(this).children('span').css({transform:'rotate(0deg)',backgroundPosition:'0 0.1rem'});
+        $(this).children('span').css({transform:'rotate(0deg)',backgroundPosition:'0 0.05rem'});
     }
 });
 /**************点击缓慢返回顶部*************/
