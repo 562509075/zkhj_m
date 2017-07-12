@@ -73,13 +73,13 @@ $('.moreList').click(function () {
         $('.list-con_top ul li').show('slow');
         $(this).children('p').html('收起');
         show = 1;
-        $(this).children('span').css({transform:'rotate(180deg)'});
+        $(this).children('span').css({transform:'rotate(180deg)',backgroundPosition:'0 -0.05rem'});
     }else if(show == 1){
         $('.list-con_top ul li').not('li:eq(0),li:eq(1),li:eq(2),li:eq(3)').hide('slow');
         $(this).children('p').html('查看更多');
         show = 0;
        /* $(this).children('span').animate({rotate: '180deg'});*/
-        $(this).children('span').css({transform:'rotate(0deg)'});
+        $(this).children('span').css({transform:'rotate(0deg)',backgroundPosition:'0 0.1rem'});
     }
 });
 /**************点击缓慢返回顶部*************/

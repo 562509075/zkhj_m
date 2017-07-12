@@ -422,15 +422,17 @@ footer p span{
     position: relative;
 }
 .listContent_left{
-    width: 3.75rem;
-    height: 2.75rem;
+    /*width: 3.75rem;
+    height: 2.75rem;*/
+    width: 27%;
     float: left;
 }
 .listContent_left img{
     height: 100%;
 }
 .listContent_right{
-    width: 10.5rem;
+    /*width: 10.5rem;*/
+    width: 70%;
     float: right;
     height: inherit;
 }
