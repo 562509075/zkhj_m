@@ -1,0 +1,726 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f3f3;
+}
+ul {
+    list-style: none;
+}
+.wrap {
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;;
+    font-family: "微软雅黑", "helvetica neue", tahoma, "hiragino sans gb", stheiti, "wenquanyi micro hei", \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+    font-size: 12px;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*解决高度坍塌问题*/
+.fix{zoom:1;}
+.fix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+
+@media screen and (min-width:640px) {
+    html{font-size: 40px !important;}
+}
+/*******************header*********************/
+header{
+    width: 100%;
+    background-color: #5970ff;
+}
+.header_left{
+    width: 4.55rem;
+    padding: 0.6rem 0.5rem;
+    float: left;
+}
+.header_right{
+    width: 1.15rem;
+    padding: 0.92rem 0.5rem;
+    float: right;
+}
+.device img{
+    height: 100%;
+}
+.header-nav{
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999999999;
+    opacity: 0;
+    overflow: hidden;
+    margin-left: 100%;
+}
+.header-nav ul{
+    width: 5.75rem;
+    height: 100%;
+    background-color: #fff;
+    float: right;
+    padding-top: 1rem;
+}
+.header-nav ul li{
+    width: 100%;
+    height: 1.375rem;
+    line-height: 1.375rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+}
+.header-nav ul li a{
+    display: block;
+    font-size: 0.45rem;
+}
+.header-nav ul li a span{
+    width: 0.25rem;
+    height: 0.45rem;
+    display: inline-block;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background: url("../img/common/jiantou-ico.png")no-repeat right;
+}
+.header-nav ul li:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.header-nav ul li:nth-child(1){
+    background: url("../img/common/index-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(2){
+    background: url("../img/common/us-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(3){
+    background: url("../img/common/project-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(4){
+    background: url("../img/common/jidi-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(5){
+    background: url("../img/common/yiliao-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(6){
+    background: url("../img/common/mall-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(7){
+    background: url("../img/common/news-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(8){
+    background: url("../img/common/join-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+.header-nav ul li:nth-child(9){
+    background: url("../img/common/contact-ico.png")no-repeat;
+    background-size: 0.725rem 0.6rem;
+    background-position: 0.625rem 0.375rem;
+}
+/*******************首页新闻滚动*********************/
+.news-index{
+    width: 100%;
+    height: 1.25rem;
+    background: #fff;
+    margin: 0.5rem 0;
+}
+.newShow{
+    width: 100%;
+    height: 0.5rem;
+}
+.newShow_left{
+    width: 2.825rem;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0.125rem 0.75rem 0.125rem 0.5rem;
+    float: left;
+}
+.newShow_right{
+    line-height: 1.25rem;
+}
+.newShow_right ul li a{
+    font-size: 0.45rem;
+    display: block;
+}
+/*******************首页导航*********************/
+nav{
+    width: 100%;
+    background-color: #fff;
+}
+.nav_top{
+    padding: 0.5rem;
+    background: #fff;
+}
+.nav_top ul{
+   width: 100%;
+}
+.nav_top ul li{
+    width: 25%;
+    float: left;
+}
+.nav_top ul li a{
+    display: block;
+}
+.nav_top ul li .li_top{
+    width: 2.425rem;
+    padding-bottom: 0.25rem;
+    margin: 0 auto;
+}
+.nav_top ul li .li_bottom{
+    text-align: center;
+    color: #65636e;
+    font-size: 0.45rem;
+}
+.nav_top ul:nth-child(2){
+    margin-top: 0.5rem;
+}
+.nav_bottom{
+    width: 100%;
+    padding: 0 0 0.5rem 0;
+}
+/*****************首页集团项目*******************/
+.project-index{
+    width: 100%;
+    background: #fff;
+    margin: 0.5rem 0;
+}
+.project-index_top{
+    width: 100%;
+    padding: 0.375rem 0;
+}
+.project-index_top_left{
+    border-left: 0.125rem solid #5970ff;
+    float: left;
+}
+.project-index_top_left a{
+    display: block;
+    font-size: 0.6rem;
+    padding-left: 0.5rem;
+}
+.project-index_top_right{
+    float: right;
+    margin-right: 0.5rem;
+}
+.project-index_top_right a{
+    display: block;
+    font-size: 0.6rem;
+    color: #878c89;
+    background: url("../img/index/see-ico.png")no-repeat right;
+    background-size: 0.375rem 0.625rem;
+    padding-right: 0.5rem;
+}
+.project-index_bottom{
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+.project-index_bottom ul{
+
+}
+.project-index_bottom ul:first-child{
+    padding-bottom: 0;
+}
+.project-index_bottom ul:first-child li{
+    margin-bottom: 0;
+}
+.project-index_bottom ul li{
+    /*display: inline-block;*/
+    /*width: 7.125rem;*/
+    width: 47%;
+    float: left;
+    border: 1px solid #efefef;
+    border-radius: 0.1rem;
+    box-shadow: 0.01rem 0.01rem 0.01rem #e2e2e2;
+    margin-top: 0.375rem;
+}
+.project-index_bottom ul li:nth-child( even) {
+    margin-left: 3%;
+}
+.project-index_bottom ul li a{
+    display: block;
+}
+.project-image img{
+    -webkit-border-top-left-radius: 0.1rem;
+    -webkit-border-top-right-radius: 0.1rem;
+}
+.project-title{
+    padding: 0.15rem 0 0.25rem 0.375rem;
+    font-size: 0.45rem;
+    color: #65636e;
+}
+.project-index_bottom ul:nth-child(2){
+    margin-top: 0.5rem;
+}
+    /*****************首页图片展示*********************/
+.show-index{
+    background-color: #fff;
+}
+.show-title{
+    padding: 0.5rem;
+}
+.show-title ul li{
+    float: left;
+    width: 4.9rem;
+    padding: 0.25rem 0;
+    text-align: center;
+    border: 0.025rem solid #5970ff;
+    border-left: none;
+    color: #5970ff;
+    font-size: 0.525rem;
+}
+.show-title ul li:first-child{
+    background-color: #5970ff;
+    border-left: 0.025rem solid #5970ff;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+    color: #fff;
+}
+.show-title ul li:last-child{
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+.show-con{
+    width: 100%;
+}
+.show-huanjing{
+    width: 100%;
+    background: #fff;
+    padding: 0.5rem 0;
+}
+.show-huanjing-con,
+.show-huodong-con,
+.show-join-con{
+    width: 70%;
+    margin: 0 auto;
+    border: 0.025rem solid #efefef;
+    box-shadow: 0.025rem 0.025rem 0.25rem #e2e2e2;
+    padding: 0.25rem;
+}
+.show-huodong{
+    width: 100%;
+    background: #fff;
+    /*padding: 0.5rem 0;*/
+    height: 0;
+    overflow: hidden;
+}
+.show-join{
+    width: 100%;
+    background: #fff;
+    /*padding: 0.5rem 0;*/
+    height: 0;
+    overflow: hidden;
+}
+#showImages div.swiper-wrapper{
+    display: none;
+}
+#showImages div.swiper-wrapper:first-child{
+    display: block;
+}
+/******************底部*******************/
+footer{
+    width: 100%;
+    padding: 0.5rem 0;
+}
+footer p{
+    text-align: center;
+    font-size: 0.45rem;
+    color: #444;
+    line-height: 1rem;
+}
+footer p span{
+    color: #ff0000;
+}
+.null{
+    height: 1.75rem;
+}
+/******************底部导航*******************/
+.bottomNav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.75rem;
+    background: #fff;
+    z-index: 9999999;
+    box-shadow: 1px 0 10px rgba(108, 108, 108, 0.92);
+}
+.bottomNav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+   /* border-left: 0.025rem solid #f3f3f3;*/
+}
+.bottomNav ul li:nth-child(1){
+    border-left: none;
+}
+.bottomNav ul li a{
+    display: block;
+    font-size: 0.525rem;
+    line-height: 1.75rem;
+    padding-left: 0.65rem;
+    cursor: pointer;
+}
+.bottomNav ul li:nth-child(1) a{
+    background: url("../img/common/home-ico.png") no-repeat 0.4rem 0.5rem;
+    background-size: 0.75rem 0.675rem;
+}
+.bottomNav ul li:nth-child(2){
+    background-color: #5970ff;
+}
+.bottomNav ul li:nth-child(2) a {
+    background: url("../img/common/phone-ico2.png") no-repeat 0.4rem 0.5rem;
+    background-size: 0.7rem;
+    color: #fff;
+}
+.bottomNav ul li:nth-child(3) a {
+    background: url("../img/common/QQ-ico.png") no-repeat 0.4rem 0.5rem;
+    background-size: 0.7rem;
+}
+.bottomNav ul li:nth-child(4) a {
+    background: url("../img/common/top-ico.png") no-repeat 0.4rem 0.5rem;
+    background-size: 0.625rem 0.675rem;
+}
+
+/*****************列表页-主体******************/
+.list-con{
+    width: 100%;
+    padding: 0.5rem 0;
+    background: #fff;
+}
+.list-con .list-con_top{
+    width: auto;
+}
+.list-con ul li{
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 0.025rem solid #f3f3f3;
+}
+.list-con ul li:last-child{
+    border-bottom: none;
+}
+.list-con ul li .listContent{
+    margin: 0 0.5rem;
+    position: relative;
+}
+.listContent_left{
+    /*width: 3.75rem;
+    height: 2.75rem;*/
+    width: 27%;
+    float: left;
+}
+.listContent_left img{
+    height: 100%;
+}
+.listContent_right{
+    /*width: 10.5rem;*/
+    width: 70%;
+    float: right;
+    height: inherit;
+}
+.listContent_right h3{
+    font-size: 0.525rem;
+}
+.listContent_right p{
+    font-size: 0.4rem;
+    color: #959595;
+    margin-top: 0.325rem;
+}
+.listContent_right p a{
+    font-size: 0.4rem;
+    color: #5970ff;
+}
+.listContent_right div{
+    font-size: 0.35rem;
+    color: #959595;
+    padding-top: 0.25rem;
+}
+.listContent_right div span{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.4rem;
+    background: url("../img/common/see-ico.png")no-repeat;
+    background-size: 0.5rem;
+    background-position: 0 0.05rem;
+    padding-right: 0.08rem;
+}
+.list-con ul li{
+    display: none;
+}
+.list-con ul li:nth-child(1),
+.list-con ul li:nth-child(2),
+.list-con ul li:nth-child(3),
+.list-con ul li:nth-child(4){
+    display: block;
+}
+
+.moreList{
+    width: 100%;
+    text-align: center;
+    padding: 0.375rem 0;
+    border-bottom: 0.025rem solid #f3f3f3;
+}
+.moreList p{
+    display: inline-block;
+    font-size: 0.6rem;
+    color: #878c89;
+}
+.moreList span{
+    width: 0.75rem;
+    height: 0.575rem;
+    background: url("../img/common/seeMore-ico.png")no-repeat;
+    display: inline-block;
+    background-size: 100%;
+    background-position: 0 0.1rem;
+}
+.hotSpot{
+    width: 100%;
+}
+.hotSpot-title{
+    padding: 0.5rem 0;
+}
+.hotSpot-title-con{
+    border-left: 0.125rem solid #5970ff;
+}
+.hotSpot-title-con div{
+    padding: 0 0.5rem;
+}
+.hotSpot-title-con div a{
+    font-size: 0.6rem;
+    float: left;
+}
+.hotSpot-title-con div a.right{
+    float: right;
+    display: inline-block;
+    color: #878c89;
+}
+.hotSpot-title-con div a.right span{
+    width: 0.375rem;
+    height: 0.625rem;
+    display: inline-block;
+    background: url("../img/index/see-ico.png")no-repeat;
+    background-size: 100%;
+    background-position: 0 0.02rem;
+}
+.hotSpot-content{
+    padding: 0 0.5rem;
+}
+.hotSpot-content-con{
+    /*height: 4.4rem;*/
+    position: relative;
+}
+.hotSpot-content-con div{
+   /* padding: 0.375rem 0;*/
+    text-align: center;
+    color: #fff;
+    font-size: 0.525rem;
+}
+.hotSpot-content-con div.hot1{
+    width: 34.5%;
+   /* width: 5.6rem;*/
+   /* position: absolute;
+    left: 0;
+    top: 0;*/
+    background: #82c67b;
+    float: left;
+    height: 1.45rem;
+    line-height: 1.45rem;
+}
+.hotSpot-content-con div.hot2{
+    width: 34.5%;
+    /*width: 5.6rem;*/
+    /*position: absolute;
+    top: 1.45rem;
+    left: 0;*/
+    background: #76bbe4;
+    clear: left;
+    margin-top: 0.025rem;
+    float: left;
+    height: 1.45rem;
+    line-height: 1.45rem;
+}
+.hotSpot-content-con div.hot3{
+    width: 30.6%;
+    /*width: 3.75rem;*/
+    height: 2.925rem;
+    line-height: 2.925rem;
+    padding: 0;
+    /*left: 5.625rem;*/
+   /* position: absolute;
+    left: 34.7%;
+    top: 0;*/
+    background: #ecbb45;
+    float: left;
+    margin-left: 0.025rem;
+    margin-top: -1.45rem;
+}
+.hotSpot-content-con div.hot4{
+    width: 34.5%;
+    /*width: 5.6rem;*/
+    /*position: absolute;
+    right: 0;
+    top: 0;*/
+    background: #4bbeaf;
+    float: right;
+    margin-top: -1.45rem;
+    height: 1.45rem;
+    line-height: 1.45rem;
+}
+.hotSpot-content-con div.hot5{
+    width: 34.5%;
+   /* width: 5.6rem;*/
+    /*position: absolute;
+    right: 0;
+    top: 1.45rem;*/
+    margin-top: 0.025rem;
+    background: #ed9780;
+    float: right;
+    height: 1.45rem;
+    line-height: 1.45rem;
+}
+.hotSpot-content-con div.hot6{
+    width: 50%;
+    /*width: 7.4875rem;*/
+   /* position: absolute;
+    left: 0;
+    top: 2.925rem;*/
+    margin-top: 0.025rem;
+    background: #ed9780;
+    float: left;
+    height: 1.45rem;
+    line-height: 1.45rem;
+}
+.hotSpot-content-con div.hot7{
+    width: 49.5%;
+    /*width: 7.4875rem;*/
+    /*position: absolute;
+    right: 0;
+    top: 2.925rem;*/
+    margin-top: 0.025rem;
+    background: #967ae8;
+    float: right;
+    height: 1.45rem;
+    line-height: 1.45rem;
+}
+/*****************内容页*******************/
+header{
+    text-align: center;
+}
+header a.return{
+    display: inline-block;
+    background: url("../img/common/return_ico.png")no-repeat left;
+    background-size: 0.3rem 0.575rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.6rem;
+    line-height: 2.5rem;
+    color: #fff;
+    margin-left: 0.5rem;
+    float: left;
+}
+.header-title{
+    display: inline-block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 0.6rem;
+    color: #fff;
+}
+.content{
+    background: #fff;
+    padding: 0.5rem;
+}
+
+.content-title h3{
+    font-size: 0.525rem;
+    color: #333;
+}
+.date{
+    display: inline-block;
+    padding: 0.5rem 0;
+    font-size: 0.35rem;
+    color: #959595;
+}
+.content p{
+    font-size: 0.35rem;
+    color: #8c8c8c;
+    text-indent: 0.7rem;
+    padding: 0.5rem 0;
+    line-height: 0.8rem;
+}
+.content-image{
+    width: 100%;
+}
+.content h4{
+    font-size: 0.4rem;
+    color: #333;
+    display: inline-block;
+    padding-top: 0.5rem;
+}
+.content .link{
+    padding-bottom: 1rem;
+}
+.content .link span,
+.content .link span a{
+    font-size: 0.35rem;
+}
+.content-prev{
+    float: left;
+}
+.content-next{
+    float: right;
+}
+.content .link{
+    text-indent: 0;
+    color: #bcbaba;
+}
+.content .link span.link-title{
+    color: #666;
+}
+.content .link span.hot{
+    color: #ff0606;
+}
+
+.recommend-title{
+    padding: 0.35rem 0.5rem;
+    color: #5970ff;
+    font-size: 0.6rem;
+    font-family: "Microsoft YaHei", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", Tahoma, Arial, STHeiti, sans-serif;
+}
+.recommend-title span{
+    width: 0.575rem;
+    height: 0.675rem;
+    background: url("../img/common/recommend-ico.png")no-repeat left;
+    background-size: 0.6rem 0.675rem;
+    display: inline-block;
+    margin-right: 0.375rem;
+}
+.recommend-list{
+    background: #fff;
+    padding: 0.5rem;
+}
+.recommend-list li{
+    padding: 0.375rem 0;
+    border-bottom: 0.025rem dotted #dedede;
+    color: #8c8c8c;
+    font-size: 0.35rem;
+}
+.recommend-list li:first-child{
+    padding-top: 0;
+}
